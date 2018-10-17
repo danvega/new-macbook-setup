@@ -117,7 +117,7 @@ brew cask install intellij-idea
 brew cask install eclipse-java
 
 
-### Visual Studio Code Extensions
+### Visual Studio Code
 
 I used to hate having to install Visual Studio Code on a new machine. The reason for that is I have grown to love the editor so much that I have an extension for everything. I use to install them one by one and when you have to do that 35 times it gets really old. 
 
@@ -139,6 +139,15 @@ vscode-extensions.txt
 cat extensions.txt | xargs -L1 code --install-extension
 
 
+Dank Mono
+https://dank.sh/
+/otf/DankMono-Italic.otf
+/otf/DankMono-Regular.otf
+
+User Settings
+vscode-settings.json
+
+
 ### Node & NPM 
 
 nvm (node version manager)
@@ -153,7 +162,12 @@ it installs into your home directory so you don't need any special privileges
 
 Global packages I install right away
 
-npm install -g 
+npm install -g tldr
+https://tldr.sh/
+
+### Git Config
+
+.gitconfig
 
 ### Browser Configuration
 
@@ -174,6 +188,11 @@ stylus
 userstyles.org
 
 
+### Databases
+
+Postgres
+Mongodb
+Mysql
 
 ## Finder
 
@@ -195,9 +214,19 @@ Go > Computer > Move hard drive to favorites or locations
 
 These are a list of applications and configuration I need for work. You may not need some of these tools but I thought I would share them here anyways.
 
-brew cask install t
+brew cask install slack
 
+Twitter (App Store)
+Ryver
+Last Pass
+Trello
 
+Adobe Creative Suite
+
+* Photoshop
+* Illustrator
+* Premiere Pro
+* After Effects
 
 
 

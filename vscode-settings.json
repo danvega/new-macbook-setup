@@ -4,6 +4,7 @@
     "liveServer.settings.donotShowInfoMsg": true,
     "git.path": "/usr/bin/git",
     "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "vscode-icons",
     "editor.fontFamily": "DankMono-Italic",
     "editor.fontLigatures": true,
     "editor.fontSize": 15,
