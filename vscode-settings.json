@@ -1,0 +1,23 @@
+{
+    "explorer.confirmDragAndDrop": false,
+    "files.autoSave": "afterDelay",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "git.path": "/usr/bin/git",
+    "workbench.colorTheme": "Atom One Dark",
+    "editor.fontFamily": "DankMono-Italic",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 15,
+    "editor.fontWeight": "normal",
+    "workbench.fontAliasing": "antialiased",
+    "editor.scrollBeyondLastLine": false,
+    "explorer.confirmDelete": false,
+    "git.autofetch": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "bracketPairColorizer.forceUniqueOpeningColor": true,
+    "cSpell.userWords": [
+        "Orbitz",
+        "fileio"
+    ],
+    "csharp.referencesCodeLens.enabled": false,
+    "java.errors.incompleteClasspath.severity": "ignore"
+}
