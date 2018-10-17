@@ -50,6 +50,8 @@ I uncheck scroll direction: Natural (It doesn’t feel natural for me)
 
 System Preferences > Dock
 Change the size to small and turn on magnification
+I also remove all icons from the dock that i don't use
+
 
 Change my avatar
 System Preferences > Users & Groups > Edit Avatar
@@ -74,7 +76,7 @@ https://brew.sh/
 
 brew update - You shouldn't have anything to update but its good to check. 
 
-
+brew search 'term' to search for brews
 
 ## Terminal 
 
@@ -98,15 +100,79 @@ chsh -s /usr/local/bin/bash
 
 now run which bash | bash -v
 
+touch .bash_profile
+copy in profile
+
+
 ## Development Setup
 
 brew install git
+brew cask install google-chrome
+brew cask install google-chrome-canary
+brew cask install firefox
+brew cask install firefox-developer-edition
+brew cask install visual-studio-code
+brew cask install visual-studio-code-insiders
+brew cask install intellij-idea
+brew cask install eclipse-java
 
 
-### IDE & Text Editors
+### Visual Studio Code Extensions
+
+I used to hate having to install Visual Studio Code on a new machine. The reason for that is I have grown to love the editor so much that I have an extension for everything. I use to install them one by one and when you have to do that 35 times it gets really old. 
+
+If you want to get a list of extensions currently installed on your machine you can use the following command. 
+
+```
+code --list-extensions
+```
+
+The nice thing about that is you can install visual studio code extensions using the command line.
+
+```
+code --install-extension ${extension-name}
+```
+
+You can pipe the results of your list into a file or if you wish you can grab mine from this repository. Once you have that file you can run the following to install all of your extensions. 
+
+vscode-extensions.txt
+cat extensions.txt | xargs -L1 code --install-extension
 
 
 ### Node & NPM 
+
+nvm (node version manager)
+you don't need permissions to install globally
+no sudo
+https://github.com/creationix/nvm
+
+nvm install stable (v10.12.0)
+
+better than installing via brew or downloading the installer from the website
+it installs into your home directory so you don't need any special privileges 
+
+Global packages I install right away
+
+npm install -g 
+
+### Browser Configuration
+
+Turn on sync and sign into chrome, this brings all of my bookmarks and extensions
+
+Extensions
+LastPass
+Grammarly
+Color Picker
+LiveReload
+uBlock Origin
+privacy badger 
+oneTab
+JSONViewer
+Vue devtools
+
+stylus
+userstyles.org
+
 
 
 ## Finder
@@ -115,15 +181,21 @@ I like to customize Finder right off the bat as well
 
 Locations
 Add Macintosh HD so I can always get to the root hard drive
-Add Some Favorties
+Add Some Favorites
 Home /Users/vega
 screenshots (configure screenshot utility to save here)
 open screenshot > options > other location 
 
+cmd+shift+h (takes you home)
+cmd . (show hidden files and folders)
+
+Go > Computer > Move hard drive to favorites or locations
 
 ## Work Setup
 
 These are a list of applications and configuration I need for work. You may not need some of these tools but I thought I would share them here anyways.
+
+brew cask install t
 
 
 
