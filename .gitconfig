@@ -1,0 +1,10 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	email = dan@techelevator.com
+	name = Dan Vega
+[alias]
+	add-commit = !git add -A && git commit
