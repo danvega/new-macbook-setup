@@ -208,6 +208,7 @@ nvm install stable
 npm install -g tldr
 npm install -g typescript
 npm install -g @vue/cli
+npm install -g vuepress
 npm install -g @angular/cli
 npm install -g eslint
 npm install -g gitbook-cli
