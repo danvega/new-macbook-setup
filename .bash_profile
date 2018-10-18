@@ -28,6 +28,11 @@ alias stop_postgres="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 alias pgup="start_postgres"
 alias pgdown="stop_postgres"
 
+alias start_mysql="mysql.server start"
+alias stop_mysql="mysql.server stop"
+alias mysqlup="start_mysql"
+alias mysqldown="stop_mysql"
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

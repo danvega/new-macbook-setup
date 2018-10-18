@@ -272,6 +272,32 @@ brew cask install dbvisualizer
 
 #### MySQL
 
+To get started with MySQL run the following command:
+
+```
+brew install mysql
+```
+
+To have MySQL automatically run when you computer starts: 
+
+```
+brew services start mysql
+```
+
+OR you can start / stop it manually
+
+```
+mysql.server start
+```
+
+To be consistent with our PostgreSQL we can create a few aliases.
+
+```
+alias start_mysql="mysql.server start"
+alias stop_mysql="mysql.server stop"
+alias mysqlup="start_mysql"
+alias mysqldown="stop_mysql"
+```
 
 
 ### SDKMan
