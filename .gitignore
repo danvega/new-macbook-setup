@@ -1,1 +1,11 @@
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Application specific files
+node_modules
 .vscode/
