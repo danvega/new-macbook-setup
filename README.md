@@ -218,6 +218,7 @@ There is usually a default install of git but we used brew to install the latest
 * git config --global user.email "dan@techelevator.com"
 * git config --global user.name "Dan Vega"
 * Aliases
+    * git config --global alias.add-commit '!git add -A && git commit'
 
 ### Databases
 
