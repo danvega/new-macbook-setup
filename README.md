@@ -139,7 +139,11 @@ Now that I have a nice looking command line full of features its time to start i
 * brew cask install intellij-idea
 * brew cask install eclipse-java
 * brew cask install postman
+* brew cask install docker
 * brew install tree
+* https://github.com/sindresorhus/quick-look-plugins
+
+
 
 ### Visual Studio Code
 
