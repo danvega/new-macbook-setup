@@ -2,7 +2,7 @@ shopt -s autocd
 
 
 # Git branch in prompt.
-parse_git_branch() {
+function parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 # change command prompt
