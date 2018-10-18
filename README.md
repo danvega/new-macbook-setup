@@ -174,34 +174,70 @@ https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync
 
 I am a huge fan of the Dank Mono font. I install this and use it for most of my development. If I am writing documentation I will sometimes use a different font, it just depends. 
 
-Dank Mono
-https://dank.sh/
+[Dank Mono](https://dank.sh/)
 
 #### User Settings
 
-User Settings
-vscode-settings.json
+I have included my user settings in case you want to see what I use. I don't have much here but will try and update these soon.
 
 ### Node & NPM 
 
-nvm (node version manager)
-you don't need permissions to install globally
-no sudo
-https://github.com/creationix/nvm
+If you're going to install Node I think the best way to do so is by using [Node Version Manager (NVM)](https://github.com/creationix/nvm). This to me has a few advantages over installing it from brew or even directly downloading it from their website. 
 
-nvm install stable (v10.12.0)
+* You can install multiple versions of Node
+    * You can set a default version
+    * You can switch between these versions easily
+* Installs in your home directory
+    * You don't need special privileges 
+    * No more sudo when installing packages globally    
 
-better than installing via brew or downloading the installer from the website
-it installs into your home directory so you don't need any special privileges 
+Once you have NVM you can install the latest stable realease (v10.12.0 at the time of this writing) using the following command.
 
-Global packages I install right away
+```
+nvm install stable
+```
 
+#### Global Packages to Install
+
+```
 npm install -g tldr
-https://tldr.sh/
+npm install -g typescript
+npm install -g @vue/cli
+npm install -g @angular/cli
+npm install -g @eslint
+npm install -g gitbook-cli
+npm install -g lodash
+```
 
 ### Git Config
 
+There is usually a default install of git but we used brew to install the latest earlier. Now that we are on the latest version of git we need to do a little configuration. 
+
 .gitconfig
+
+* username
+* email
+* aliases
+
+### Databases
+
+* [PostgreSQL](https://www.postgresql.org/)
+* [Mongodb](https://www.mongodb.com/)
+
+### SDKMan
+
+This is one of my favorite version managers because I use a lot of the Software Development Kits (SDKs) it manages. If you haven't heard of [SDKMan check them out here](https://sdkman.io/install). This is a list of SDKs I manage using SDKMan.
+
+* Java
+* Groovy
+* Grails
+* Gradle
+* Maven
+* Micronaut
+* Spring Boot
+* Kotlin
+
+Here is a full list of SDKs https://sdkman.io/sdks 
 
 ### Browser Configuration
 
@@ -219,26 +255,20 @@ Turn on sync and sign into chrome, this brings all of my bookmarks and extension
 * JSONViewer
 * Vue devtools
 
-### Databases
-
-Postgres
-Mongodb
-Mysql
-
-
-
-
 ## System Preferences
 
+I have a few things that I customize in preferences: 
+
+**Trackpad:**
 System Preferences > Trackpad > Scroll & Zoom: 
 I uncheck scroll direction: Natural (It doesn’t feel natural for me) 
 
+**Dock:**
 System Preferences > Dock
 Change the size to small and turn on magnification
 I also remove all icons from the dock that i don't use
 
-
-Change my avatar
+**Avatar:**
 System Preferences > Users & Groups > Edit Avatar
 
 **Theme:**
@@ -246,32 +276,32 @@ macOS Mojave introduced light & dark themes. I still stick with the light theme 
 
 ## Finder
 
-I like to customize Finder right off the bat as well
+I like to customize Finder so I can get to all of my most used places quickly. 
 
-Locations
-Add Macintosh HD so I can always get to the root hard drive
-Add Some Favorites
-Home /Users/vega
-screenshots (configure screenshot utility to save here)
-open screenshot > options > other location 
+**Locations**
 
-cmd+shift+h (takes you home)
-cmd . (show hidden files and folders)
+* Add Macintosh HD to locations so I can always get to the root hard drive
+* Home /Users/vega
+* screenshots (configure screenshot utility to save here)
+    * open screenshot > options > other location 
 
-Go > Computer > Move hard drive to favorites or locations
+**A few tips in finder**
+
+* cmd+shift+h (takes you home)
+* cmd . (show hidden files and folders)
 
 ## Work Setup
 
 These are a list of applications and configuration I need for work. You may not need some of these tools but I thought I would share them here anyways.
 
-brew cask install slack
-
-Twitter (App Store)
-Ryver
 Last Pass
-Trello
+Slack
+Twitter (App Store)
+Screenflow
 
-Adobe Creative Suite
+### Adobe Creative Suite
+
+I am huge fan of Adobe and all of their products!
 
 * Photoshop CC
 * Illustrator CC

@@ -48,13 +48,13 @@ I am not installing a full suite of applications here because I am not using thi
 
 * [Google Chrome](https://www.google.com/chrome/)
 * [Visual Studio 2017 Community](https://visualstudio.microsoft.com/downloads/)
-    * .NET Core 
+    * Select ASP.NET Web Development (This will give you .NET Core)
 * [SQL Server 2017 Express Edition](https://www.microsoft.com/en-us/sql-server/sql-server-editions-express)
 * [SQL Studio Management Studio (SSMS) 17.9 GA](https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-changelog-ssms?view=sql-server-2017#ssms-179-latest-ga-release)
 * [Ubuntu on Windows](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (If you want bash) 
 * [Visual Studio Code](https://code.visualstudio.com/)    
 
 ## Switching Between Operating Systems
-If you want to switch between operating systems restart the computer and hold the option key down. When the computer boots it will ask you which partition you want to boot in. You can only run one operating system at a time and can’t run both in parallel. 
+If you want to switch between operating systems you need to restart the computer and hold the option key down. When the computer boots it will ask you which partition you want to boot in. You can only run one operating system at a time and you can’t run both in parallel. This is perfectly fine for my use case but if you want to run both simultaneously check out [Parallels](https://www.parallels.com/products/desktop/)
 
 
