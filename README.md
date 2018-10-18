@@ -215,14 +215,58 @@ There is usually a default install of git but we used brew to install the latest
 
 .gitconfig
 
-* username
-* email
-* aliases
+* git config --global user.email "dan@techelevator.com"
+* git config --global user.name "Dan Vega"
+* Aliases
 
 ### Databases
 
 * [PostgreSQL](https://www.postgresql.org/)
 * [Mongodb](https://www.mongodb.com/)
+* [MySQL](https://www.mysql.com/)
+
+#### PostgreSQL
+
+The easiest way to install PostgreSQL is by using HomeBrew.
+
+```
+brew install postgresql
+```
+
+When this is done installing you can have it start up automatically using the following command.
+
+```
+brew postgresql-upgrade-database
+```
+
+I don't need it that often so when I want to run it I can run the following command: 
+
+```
+pg_ctl -D /usr/local/var/postgres start
+```
+
+Better yet I can add a few of aliases to my bash profile to make this even easier.
+
+```
+alias start_postgres="pg_ctl -D /usr/local/var/postgres start"
+alias stop_postgres="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+alias pgup="start_postgres"
+alias pgdown="stop_postgres"
+```
+
+Our students also use DBVisualizer so I like to have that installed as well. 
+
+```
+brew cask install dbvisualizer
+```
+
+
+#### MongoDB
+
+
+#### MySQL
+
+
 
 ### SDKMan
 
