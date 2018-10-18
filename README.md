@@ -138,6 +138,7 @@ Now that I have a nice looking command line full of features its time to start i
 * brew cask install visual-studio-code-insiders
 * brew cask install intellij-idea
 * brew cask install eclipse-java
+* brew cask install postman
 * brew install tree
 
 ### Visual Studio Code
