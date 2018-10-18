@@ -315,6 +315,8 @@ This is one of my favorite version managers because I use a lot of the Software 
 
 Here is a full list of SDKs https://sdkman.io/sdks 
 
+**Installation:** curl -s "https://get.sdkman.io" | bash
+
 ### Browser Configuration
 
 Turn on sync and sign into chrome, this brings all of my bookmarks and extensions. If you have any questions about any of these or why I install them please see the contact me section below. 
