@@ -1,4 +1,4 @@
-# New MacBook Setup
+#New MacBook Setup
 
 I thought I would take some time and document what I do when I get a new machine. This is going to walk through some preferences I configure, applications I install and settings I use for different programs. I am always curious to see how other software developers are setting up their development machines so I figured it would be a good opportunity to share mine.
 
@@ -140,6 +140,7 @@ Now that I have a nice looking command line full of features its time to start i
 * brew cask install eclipse-java
 * brew cask install postman
 * brew cask install docker
+* brew cask install spectacle
 * brew install tree
 * https://github.com/sindresorhus/quick-look-plugins
 
