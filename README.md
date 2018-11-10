@@ -33,6 +33,8 @@ If you have signed in with your Apple Id you will be taken directly to the Apple
 
 To remove applications I like installing [AppCleaner](https://freemacsoft.net/appcleaner/). This will make sure that the application and any related files will be removed.  
 
+Another application I really love for this and so many other things is [Clean My Mac](https://macpaw.com/cleanmymac)
+
 ### Garage Band
 
 Unfortunately AppCleaner only works for 3rd party installed applications and wont remove GarageBand. You need to remove this manually and while there are a few more locations these are the main 3 you should remove. If you're going to use apple sound affects in other programs please read up on this before deleting. 
