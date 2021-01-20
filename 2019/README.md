@@ -170,6 +170,7 @@ Now that I have a clean and stylish command line full of features it's time to s
 * brew install --cask notion
 * brew install --cask adobe-creative-cloud
 * brew install tree
+* brew install bat
 * https://github.com/sindresorhus/quick-look-plugins
 
 ### Visual Studio Code
