@@ -161,6 +161,7 @@ Now that I have a clean and stylish command line full of features it's time to s
 * brew install --cask intellij-idea
 * brew install --cask docker
 * brew install --cask tableplus
+* brew install --cask insomnia
 * brew install --cask lastpass
 * brew install --cask rectangle
 * brew install --cask obs
