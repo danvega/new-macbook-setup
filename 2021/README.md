@@ -175,12 +175,14 @@ Now that I have a clean and stylish command line full of features it's time to s
 * brew install --cask tableplus
 * brew install --cask lastpass
 * brew install --cask rectangle
+* brew install --cask postman
 * brew install --cask notion
 * brew install --cask adobe-creative-cloud
 * brew install --cask zoom
 * brew install --cask krisp
 * brew install tree
 * brew install bat
+* brew install httpie
 
 ### Chrome Plugins
 
