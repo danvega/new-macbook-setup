@@ -30,7 +30,7 @@ The first thing I did was set this up on my desk, connect my external monitors a
 
 I have a few things that I customize in preferences:
 
-**Mouse**
+**Mouse:**
 `System Preferences > Mouse`
 I update the tracking speed and scroll speed, I like to move fast.
 
