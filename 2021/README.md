@@ -95,3 +95,99 @@ I like to customize Finder so I can get to all of my most used places quickly.
 
 * cmd+shift+h (takes you home)
 * cmd . (show hidden files and folders)
+
+## Getting Started
+
+Anything I can install using [HomeBrew](https://brew.sh/) I will. Before you install HomeBrew though you need to install the Xcode command-line utilities. Open up a new terminal and type the following command. Even if you plan on installing Xcode I believe you still need to install these now as they moved them out of the standard installation.
+
+```
+xcode-select --install
+```
+
+The command-line Tools Package is a small self-contained package available for download separately from Xcode and that allows you to do command-line development in OS X. It consists of two components: OS X SDK and command-line tools such as Clang, which are installed in `/usr/bin`.
+
+
+### HomeBrew
+
+As I said earlier I use HomeBrew to install anything that it can install. If you normally use brew to install something like google-chrome you know that you have to then drag it into the applications folder. If you use cask it will not only download the package but also move it into the applications folder for you.
+
+[HomeBrew Website](https://brew.sh/)
+
+Installation:
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+#### HomeBrew Post Installation
+
+- Run these two commands in your terminal to add Homebrew to your PATH:
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/vega/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+- Run brew help to get started
+- Further documentation:
+    https://docs.brew.sh
+
+## Shell
+
+The default shell in macOS is now zsh. All this means is that the user account shell will default to zsh. This doesn't mean you can't use bash or whatever shell you want. In the past, I have switched this to bash but I have decided to stop being an old man who is stuck in his ways and switch over to zsh and oh-my-zsh.
+
+ ### OH MY ZSH
+
+If you're going to use ZSH you must start by installing [oh-my-zsh](https://ohmyz.sh/).
+
+> Oh My Zsh is a delightful, open-source, community-driven framework for managing your Zsh configuration. It comes bundled with thousands of helpful functions, helpers, plugins, themes, and a few things that make you shout... "Oh My ZSH!"
+
+This replaces the need for me to customize bash with all my aliases, shortcuts a personal preferences. Once you have oh-my-zsh installed you can switch themes and add plugins. I decided to install the [Spaceship theme](https://github.com/denysdovhan/spaceship-prompt) and here are the following plugins that I have activated.
+
+```
+plugins=(common-aliases git aws docker golang httpie node npm nvm spring zsh-syntax-highlighting zsh-autosuggestions zsh-z zsh-sdkman)
+```
+
+![Shell](./img/shell.png)
+
+### iTerm2
+
+I switched from Terminal to iTerm2 a couple of years ago and haven't looked back. If you want to find out about some of the features & configurations it gives you please [check out their website](https://www.iterm2.com/features.html).
+
+```
+brew install --cask iterm2
+```
+
+One thing I like to do is customize the colors and a great resource for that is https://iterm2colorschemes.com/
+
+This is a list of my favorite color schemes.
+
+* Dracula
+* FirefoxDev
+* Github
+* Grape
+* Grass
+* Hipster Green
+* Homebrew
+* Man Page
+* Material
+* MaterialDark
+* Novel
+* OceanicMaterial
+
+
+## Development Setup
+
+Now that I have a clean and stylish command line full of features it's time to start installing all of the different applications I will use. If you have any questions about any of these or why I install them please see the contact me section below.
+
+* brew install git
+* brew install --cask google-chrome
+* brew install --cask visual-studio-code
+* brew install --cask intellij-idea
+* brew install --cask docker
+* brew install --cask tableplus
+* brew install --cask insomnia
+* brew install --cask lastpass
+* brew install --cask rectangle
+* brew install --cask obs
+* brew install --cask zoom
+* brew install --cask slack
+* brew install --cask discord
+* brew install --cask notion
+* brew install --cask adobe-creative-cloud
+* brew install tree
+* brew install bat
+* https://github.com/sindresorhus/quick-look-plugins
