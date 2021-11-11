@@ -5,3 +5,22 @@ I have been looking forward to getting this computer ever since the M1 was relea
 - MacBook Pro (14-inch, 2021)
 - Chip: Apple M1 Max
 - Memory 32GB
+
+## Setup Laptop on Desk
+
+The first thing I did was set this up on my desk, connect my external monitors and hook up all of my peripherals:
+
+ - LG 4k Display
+ - Dell Ultrawide Display
+ - Apple Magic Keybaord
+ - Mx Master Mouse (I also went into preferences and changed the speed of the mouse)
+ - Microphone
+ - Camera
+ - Lights
+ - AirPods Pro
+ - Headphones (wyze)
+
+## macOS Updates
+
+The first thing I do is run any updates that are available. In my case, the laptop came preloaded with macOS Monterey and there was a 12.0.1 update avaible. You can find these updates by going to preferences > Software Updates. 
+
