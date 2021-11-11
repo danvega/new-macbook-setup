@@ -29,9 +29,8 @@ SPACESHIP_PROMPT_ORDER=(
   char          # Prompt character
 )
 
-SPACESHIP_PROMPT_SYMBOL="🚀"
+SPACESHIP_CHAR_SYMBOL="🚀 "
 SPACESHIP_PROMPT_SEPARATE_LINE=false
-#SPACESHIP_DIR_COLOR="Indigo"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -46,14 +45,13 @@ SPACESHIP_PROMPT_SEPARATE_LINE=false
 # Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
+# Uncomment one of the following lines to change the auto-update behavior
+# zstyle ':omz:update' mode disabled  # disable automatic updates
+# zstyle ':omz:update' mode auto      # update automatically without asking
+# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+# zstyle ':omz:update' frequency 13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -68,6 +66,9 @@ SPACESHIP_PROMPT_SEPARATE_LINE=false
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
+# You can also set it to another string to have that shown instead of the default red dots.
+# e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
+# Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
 # COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
@@ -91,7 +92,11 @@ SPACESHIP_PROMPT_SEPARATE_LINE=false
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(common-aliases git aws docker golang httpie node npm nvm spring zsh-syntax-highlighting zsh-autosuggestions zsh-z zsh-sdkman)
+plugins=(common-aliases git aws docker golang httpie node npm nvm spring)
+
+source "/Users/vega/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
+source $ZSH/oh-my-zsh.sh
+
 
 # User configuration
 
@@ -119,83 +124,10 @@ plugins=(common-aliases git aws docker golang httpie node npm nvm spring zsh-syn
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
-source "/Users/vega/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
-
-########
-# FEDEX
-########
-function fdxu() {
-	# mac network proxies
-	networksetup -setwebproxy "Wi-fi" internet.proxy.fedex.com 3128 && networksetup -setsecurewebproxy "Wi-fi" internet.proxy.fedex.com 3128
-	#networksetup -setwebproxy "USB 10/100/1000 LAN" internet.proxy.fedex.com 3128 && networksetup -setsecurewebproxy "USB 10/100/1000 LAN" internet.proxy.fedex.com 3128
-	# yarn config
-	yarn config set https-proxy http://internet.proxy.fedex.com:3128
-	yarn config set proxy http://internet.proxy.fedex.com:3128
-	# global env variables
-	export http_proxy=http://internet.proxy.fedex.com:3128
-	export https_proxy=http://internet.proxy.fedex.com:3128
-	echo "\nHTTP & HTTPS proxies enabled"
-}
-function fdxd() {
-	# mac network proxies
-	networksetup -setwebproxystate "Wi-Fi" off && networksetup -setsecurewebproxystate "Wi-Fi" off
-	#networksetup -setwebproxystate "USB 10/100/1000 LAN" off && networksetup -setsecurewebproxystate "USB 10/100/1000 LAN" off
-	# yarn config
-	yarn config delete https-proxy
-	yarn config delete proxy
-	# global env variables
-	unset http_proxy
-	unset https_proxy
-	echo "\nHTTP & HTTPS proxies disabled"
-}
-function fdxs() {
-	echo "\n> HTTPS Proxy";
-	echo "* Wi-fi";
-	networksetup -getsecurewebproxy "Wi-fi"
-	#echo "\n* USB 10/100/1000 LAN";
-	#networksetup -getsecurewebproxy "USB 10/100/1000 LAN"
-	echo "\n> HTTP Proxy";
-	echo "* Wi-fi";
-	networksetup -getwebproxy "Wi-fi"
-	#echo "\n* USB 10/100/1000 LAN";
-	#networksetup -getwebproxy "USB 10/100/1000 LAN"
-	echo "\n> http_proxy env => $(printenv http_proxy)"
-	echo "> https_proxy env => $(printenv https_proxy)"
-}
-
-
-# JAVA
-function java8Oracle() {
-	sdk default java 8-oracle
-	java -version
-}
-function java8() {
-	sdk default java 8.0.275.hs-adpt
-	java -version
-}
-function java11() {
-	sdk default java 11.0.9.hs-adpt
-	java -version
-}
-function java15() {
-	sdk default java 15.0.2.hs-adpt
-	java -version
-}
-function java16() {
-	sdk default java 16.0.0.hs-adpt
-	java -version
-}
-
-
-# NVM
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/vega/.sdkman"
-[[ -s "/Users/vega/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/vega/.sdkman/bin/sdkman-init.sh"
-
-
-source $ZSH/oh-my-zsh.sh
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
