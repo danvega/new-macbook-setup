@@ -253,6 +253,7 @@ nvm install stable
 
 #### Global Packages to Install
 
+npm install -g @gridsome/cli
 npm install -g tldr
 npm install -g typescript
 npm install -g eslint
