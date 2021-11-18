@@ -89,7 +89,7 @@ I like to customize Finder so I can get to all of my most used places quickly.
 **A few tips in finder**
 
 * cmd+shift+h (takes you home)
-* cmd . (show hidden files and folders)
+* cmd+shift+. (show hidden files and folders)
 
 ### Install Apps
 
