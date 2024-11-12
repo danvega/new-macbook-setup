@@ -306,9 +306,6 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 
 # Install latest stable Node
 nvm install stable
-
-# Global NPM packages
-npm install -g @gridsome/cli typescript eslint lodash
 ```
 
 ### Git Configuration
