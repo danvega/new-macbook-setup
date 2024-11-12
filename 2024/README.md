@@ -27,12 +27,13 @@ A comprehensive guide for setting up a new MacBook Pro for development and creat
 
 ### Before You Begin Checklist
 - [ ] Backup old machine (if applicable)
+- [ ] Library > Fonts
 - [ ] Have Apple ID credentials ready
 - [ ] Prepare external drive for Time Machine
 - [ ] Download essential installation files
 - [ ] Have license keys available
 - [ ] Enable two-factor authentication for Apple ID
-- [ ]List of required applications and tools
+- [ ] List of required applications and tools
 
 ## Essential System Setup
 
@@ -60,6 +61,10 @@ A comprehensive guide for setting up a new MacBook Pro for development and creat
 - Configure display scaling
 - Arrange multiple displays (if applicable)
 
+### Lock Screen
+- `System Settings > Lock Screen`
+  - Turn off display after 10 minutes
+
 #### Input Devices
 **Mouse Settings** (`System Settings > Mouse`)
 - Adjust tracking speed
@@ -75,12 +80,20 @@ A comprehensive guide for setting up a new MacBook Pro for development and creat
 - Adjust dock size
 - Enable magnification
 - Remove unused icons
-- Set auto-hide
+- Show recent apps (turn off)
+- Turn off automatically arrange spaces
 
 ### Finder
 
 I like to customize Finder starting with adding common folders to my favorites. If you're new to macOS It's helpful to get
-used to moving around and cusotmizing Finder.
+used to moving around and customizing Finder. 
+
+- Right-click on the title bar and click `Customize Toolbar`.
+- View > Show Path Bar
+- `Finder > Settings`
+  - Remove Tags (I don't use them)
+  - Customize Sidebar
+  - Advanced (Show filename extensions + Search Current Folder)
 
 **Keyboard Shortcuts**
 * Cmd + Shift + H (takes you home)
@@ -145,7 +158,7 @@ used to moving around and cusotmizing Finder.
 
 ### Command Line Tools
 
-Anything I can install using HomeBrew I will. Before you install HomeBrew though you need to install the Xcode command-line utilities. Open up a new terminal and type the following command. Even if you installed Xcode you still need to install these now as they moved them out of the standard installation.
+Anything I can install using HomeBrew I will. Before you install HomeBrew though you need to install the Xcode command-line utilities. Open up a new terminal and type the following command. Even if you installed Xcode you still need to install these now as they moved them out of the standard installation. **Note** - I was not able to do this and the command line tools were installed with Homebrew.
 
 ```bash
 # Install Xcode Command Line Tools
