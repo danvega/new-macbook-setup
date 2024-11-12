@@ -342,34 +342,6 @@ curl -s "https://get.sdkman.io" | zsh
 
 This is the rest of the applications and tools that I install:
 
-### Raycast
-
-[Raycast](https://www.raycast.com/) is a powerful Spotlight replacement that enhances productivity with features like:
-
-- Quick application launcher
-- Clipboard history
-- Snippets management
-- Window management
-- Extensions ecosystem
-
-**Installation:** 
-
-```bash
-brew install --cask raycast
-```
-
-**Essential Settings:**
-- Set hotkey (default is ⌘ + Space, you might want to change Spotlight's hotkey first)
-- Enable clipboard history
-- Configure window management shortcuts
-- Install recommended extensions:
-  - Calculator
-  - Calendar
-  - Color Picker
-  - GitHub
-  - Window Management
-
-
 ### Misc Applications
 
 ```bash
@@ -393,6 +365,37 @@ brew install --cask expressvpn
 - [Vue DevTools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en)
 - [ColorZilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en)
 - [1Password](https://chromewebstore.google.com/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa)
+
+### Raycast
+
+[Raycast](https://www.raycast.com/) is a powerful Spotlight replacement that enhances productivity with features like:
+
+- Quick application launcher
+- Clipboard history
+- Snippets management
+- Window management
+- Extensions ecosystem
+
+**Installation:**
+
+```bash
+brew install --cask raycast
+```
+
+**Essential Settings:**
+- Set hotkey (default is ⌘ + Space, you might want to change Spotlight's hotkey first)
+- Enable clipboard history
+- Configure window management shortcuts
+- Install recommended extensions:
+  - Calculator
+  - Calendar
+  - Color Picker
+  - GitHub
+  - Window Management
+
+### Apple Intelligence
+
+Coming Soon!
 
 ## Cleanup & Optimization
 
