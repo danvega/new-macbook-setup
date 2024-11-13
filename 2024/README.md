@@ -158,7 +158,7 @@ used to moving around and customizing Finder.
 
 ### Command Line Tools
 
-Anything I can install using HomeBrew I will. Before you install HomeBrew though you need to install the Xcode command-line utilities. Open up a new terminal and type the following command. Even if you installed Xcode you still need to install these now as they moved them out of the standard installation. **Note** - I was not able to do this and the command line tools were installed with Homebrew.
+Anything I can install using HomeBrew I will. Before you install HomeBrew though you need to install the Xcode command-line utilities. Open up a new terminal and type the following command. Even if you installed Xcode you still need to install these now as they moved them out of the standard installation. 
 
 ```bash
 # Install Xcode Command Line Tools
@@ -170,6 +170,8 @@ The command-line Tools Package is a small self-contained package available for d
 As I said earlier I use HomeBrew to install anything that it can install. If you normally use brew to install something like google-chrome you know that you have to then drag it into the applications folder. If you use cask it will not only download the package but also move it into the applications folder for you.
 
 [HomeBrew Website](https://brew.sh/)
+
+**Note** - I was not able to install this and the command line tools were installed while installing Homebrew.
 
 ```bash
 # Install Homebrew
