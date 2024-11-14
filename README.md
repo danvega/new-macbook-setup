@@ -6,3 +6,9 @@ This repository contains my notes for setting up a new MacBook Pro. I thought ab
 - [2021 MacBook Pro (14-inch)](2021/README.md)
 - [2019 MacBook Pro (16-inch)](2019/README.md)
 - [2017 MacBook Pro (13-inch)](2017/README.md)
+
+## Videos
+
+Here is a live stream of me setting up my new MacBook Pro M4 Max. 
+
+https://youtube.com/live/t8ry7PkYe6M
